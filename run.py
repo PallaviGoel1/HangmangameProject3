@@ -5,8 +5,8 @@
 
 print("Welcome to the Hangman Game")
 print("*****************************")
-a=input("Your name plz : ")
-print(a) 
+a = input("Your name plz : ")
+print( a ) 
 
 print("If You want to restart the game")
-ans=input("Enter y/n: ")
+ans = input("Enter y/n: ")
