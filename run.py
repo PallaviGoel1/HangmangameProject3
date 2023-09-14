@@ -160,3 +160,4 @@ hangman()
 
 print("If You want to restart the game")
 ans = input("Enter y/n: ")
+hangman()
