@@ -179,7 +179,7 @@ def hangman():
 
 # Main function to start the game
 def main():
-    a =input("Please enter your name: \n")
+    a = input("Please enter your name: \n")
     print(a)
     print("Hello my friend "+a, ", Time to play game!\n")
     print("Number of attempts: 6\n")
