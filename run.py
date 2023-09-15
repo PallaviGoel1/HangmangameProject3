@@ -1,36 +1,38 @@
 import random
-#import requirements.txt
-#file =open("requirements.txt")
-#lines= file.read()
-#file.close()
-#print(lines)
+import time
+
+def restart_game():
+    print("If You want to restart the game")
+    ans = input("Press y, else any other key: \n") #there are choice to play game(restart)
+    if ans == "y":
+        hangman() # again call function according to player wants to restart game choice
+    else:
+        break
 
 def hangman(): #define a hangman function for game run
-    
-    #word = random.choice(requirements.word_choice)
     word=["lion","moon","sun","butterfly"] #make words list for use random function 
     word = random.choice(word) 
     turn = 6
     guessmade = ''
     valid_entry = set("abcdefghijklmnopqrstuvwxyz") #set use for lower letters
 
-    while turn > 0:
+    while turn > 0: #while use for turn (whole the program run on turn)
         main_word = ""
         # missed = 0
 
-        for letter in word:
+        for letter in word: 
             if letter in guessmade:
                 main_word = main_word + letter
             else:
                 main_word = main_word + "_ "
 
-        if main_word == word:
+        if main_word == word: #when word qual to main word then print you win
             print(main_word) 
             print("YOU WIN !!")
-            break  
+            restart_game()
 
         print("Write the right letter", main_word)
-        guess = input()
+        guess = input() #print main word on correct postion 
 
         if guess in valid_entry:
             guessmade = guessmade + guess
@@ -152,16 +154,16 @@ def hangman(): #define a hangman function for game run
                 print("|                  ")
                 print("-------------------")
                 print ("YOU LOOSE THE GAME")
+                restart_game()
 
 print ("Welcome to the Hangman Game")
 print("*****************************")
-a = input("Your name plz: \n") # input player name and print 
+a = input("Please enter your name: \n") # input player name and print 
 print(a) 
-hangman() #call the define function hangman
+print("Hello my friend "+ a , ", Time to play game")
+time.sleep(1) #wait 1 second
+hangman() # now call the define function hangman
 
-print("If You want to restart the game")
-ans = input("Enter y/n: \n") #there are choice to play game(restart)
-if ans == "y":
-    hangman() # again call function according to game play choice
-else:
-    print("Thankyou Player for Playing")
+restart_game()
+
+print("Thankyou for Playing")
