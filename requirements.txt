@@ -1,0 +1,11 @@
+word_choice=[
+"moon",
+"monkey",
+"lion",
+"station",
+"country",
+"ireland",
+"europe",
+"house",
+"milk"
+]

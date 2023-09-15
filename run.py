@@ -1,17 +1,18 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
 import random
-#import wordsforhangman
+#import requirements.txt
+#file =open("requirements.txt")
+#lines= file.read()
+#file.close()
+#print(lines)
 
-def hangman():
+def hangman(): #define a hangman function for game run
     
-    # word = random.choice(wordsforhangman.word_choice)
-    word=["lion","moon","sun","butterfly"]
-    word = random.choice(word)
+    #word = random.choice(requirements.word_choice)
+    word=["lion","moon","sun","butterfly"] #make words list for use random function 
+    word = random.choice(word) 
     turn = 6
     guessmade = ''
-    valid_entry = set("abcdefghijklmnopqrstuvwxyz")
+    valid_entry = set("abcdefghijklmnopqrstuvwxyz") #set use for lower letters
 
     while turn > 0:
         main_word = ""
@@ -37,10 +38,10 @@ def hangman():
             print("enter valid letters \n")
             guess=input()
 
-        if guess not in word:
+        if guess not in word: #if command use for hangman print acc to turns if you are enter wrong letter then you loss turns one by one
             turn = turn-1
             print(turn) 
-            print("-------------------")
+            print("-------------------") # here,start draw hangman 
             print("|                  |") 
             print("|                  ") 
             print("|                  ")
@@ -133,7 +134,7 @@ def hangman():
                 print("|                  ")
                 print("|                  ")
                 print("-------------------")
-            if turn == 0:
+            if turn == 0: # here,finish hangman pic if your turn 0 then you loose game
                 print(turn)
                 print("-------------------")
                 print("|                  |") 
@@ -154,10 +155,13 @@ def hangman():
 
 print ("Welcome to the Hangman Game")
 print("*****************************")
-a = input("Your name plz : ")
+a = input("Your name plz: \n") # input player name and print 
 print(a) 
-hangman()
+hangman() #call the define function hangman
 
 print("If You want to restart the game")
-ans = input("Enter y/n: ")
-hangman()
+ans = input("Enter y/n: \n") #there are choice to play game(restart)
+if ans == "y":
+    hangman() # again call function according to game play choice
+else:
+    print("Thankyou Player for Playing")
