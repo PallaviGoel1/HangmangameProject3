@@ -1,5 +1,10 @@
 
-# Welcome to my 3rd Project(HANGMAN GAME)
+# HANGMAN GAME
+##  Welcome to my 3rd Project
+It is very classic game of Hangman, Specially for school ,colleges and family gathering . Hangman game means(a word game in which one player selects a word that the other player must guess by supplying each of its letters: for each incorrect guess a part of a stick figure of a man who has been hanged is drawn.)
+
+## How to play game
+The hangman game is a multiplayer game. In this game, one player selects a word. Other players have a certain number of guesses to guess the characters in the word. If the players are able to guess the characters in the entire word within certain attempts, they win. Otherwise, they lose.
 
 
 
