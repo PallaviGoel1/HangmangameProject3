@@ -59,7 +59,7 @@ def hangman():
         # Reduce turn if input is wrong and print hangman
         if guess not in word:
             turn = turn-1
-            print("Number of attempts left: "turn)
+            print("Number of attempts left: ", turn)
             print("-------------------")  # here,start draw hangman
             print("|                  |")
             print("|                  ")
@@ -75,7 +75,7 @@ def hangman():
             print("-------------------")
 
             if turn == 5:
-                print("Number of attempts left: "turn)
+                print("Number of attempts left: ", turn)
                 print("-------------------")
                 print("|                  |")
                 print("|                  o")
@@ -90,7 +90,7 @@ def hangman():
                 print("|                  ")
                 print("-------------------")
             if turn == 4:
-                print("Number of attempts left: "turn)
+                print("Number of attempts left: ", turn)
                 print("-------------------")
                 print("|                  |")
                 print("|                  o")
@@ -105,7 +105,7 @@ def hangman():
                 print("|                  ")
                 print("-------------------")
             if turn == 3:
-                print("Number of attempts left: "turn)
+                print("Number of attempts left: ", turn)
                 print("-------------------")
                 print("|                  |")
                 print("|                  o")
@@ -120,7 +120,7 @@ def hangman():
                 print("|                  ")
                 print("-------------------")
             if turn == 2:
-                print("Number of attempts left: "turn)
+                print("Number of attempts left: ", turn)
                 print("-------------------")
                 print("|                  |")
                 print("|                  o")
@@ -137,7 +137,7 @@ def hangman():
                 print("|                  ")
                 print("-------------------")
             if turn == 1:
-                print("Number of attempts left: "turn)
+                print("Number of attempts left: ", turn)
                 print("-------------------")
                 print("|                  |")
                 print("|                  o")
@@ -155,7 +155,7 @@ def hangman():
                 print("-------------------")
             # here,finish hangman pic if your turn 0 then you loose game
             if turn == 0:
-                print("Number of attempts left: "turn)
+                print("Number of attempts left: ", turn)
                 print("-------------------")
                 print("|                  |")
                 print("|                  o")
