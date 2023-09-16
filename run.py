@@ -4,19 +4,16 @@ import time
 
 # Ask if user want to play again
 def restart_game():
-    str = """
-    **************************************
-    Would you like to play again?
-    If Yes, Press 'y' else 'n': """
-    print(str)
+    print("**************************************\n")
+    print("Would you like to play again?\n")
+    print("If Yes, Press 'y' else 'n': ")
     ans = input()
     if ans == "y":
         hangman()
     elif ans == "n":
-        str = """**************************************
-        Thanks for Playing!
-        ***************************************"""
-        print(str)
+        print("**************************************\n")
+        print("Thanks for Playing!\n")
+        print("***************************************\n")
         exit()
     else:
         print("\n*** Sorry, Incorrect Input. Try again please ***\n")
@@ -176,11 +173,23 @@ def main():
 
 # Select random word from list according to different levels
 def r_word():
-    word_list_1 = ["lion", "moon", "sun", "cake", "cave"]
-    # word_list_2 = ["accuse", "cuddle", "careless", "butterfly"]
-    # word_list_3 = ["abirritant", "aftershave", "", ""]
-    r_word = random.choice(word_list_1)
+    # word_list_1 = ["lion", "moon", "sun", "cake", "cave", "dark", "earth"]
+    # r_word = random.choice(word_list_1)
+    # word_list_2 = ["accuse", "cuddle", "careless", "butterfly",
+    # "certificate"]
+    # word_list_3 = ["abirritant", "aftershave", "cavitation",
+    # ""]
+    r_word = get_word(1)
     return r_word
+
+
+def get_word(lvl):
+    if lvl == 1:
+        with open('word_1.txt') as txt:
+            listlen = txt.readlines()
+            rownum = random.randint(0, listlen-1)
+            word = txt.read(rownum)
+            return word
 
 
 # Starting message of the program
