@@ -13,9 +13,10 @@ def restart_game():
     if ans == "y":
         hangman()
     elif ans == "n":
-        print("**************************************\n")
-        print("Thanks for Playing!\n")
-        print("***************************************\n")
+        str = """**************************************
+        Thanks for Playing!
+        ***************************************"""
+        print(str)
         exit()
     else:
         print("\n*** Sorry, Incorrect Input. Try again please ***\n")
@@ -58,7 +59,7 @@ def hangman():
         else:
             print("enter valid letters \n")
             guess = input()
-            
+
         # Reduce turn if input is wrong and print hangman
         if guess not in word:
             turn = turn-1
@@ -116,7 +117,8 @@ def hangman():
                 print("|                  |")
                 print("|                  o")
                 print("|                  |")
-                print("|                 /|\ ")
+                str = r"\ "
+                print("|                 /|", str)
                 print("|                  ")
                 print("|                 ")
                 print("|                  ")
