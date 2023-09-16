@@ -132,7 +132,8 @@ def hangman():
                 print("|                  |")
                 print("|                  o")
                 print("|                  |")
-                print("|                 /|\ ")
+                str = r"\ "
+                print("|                 /|", str)
                 print("|                  |")
                 print("|                 /")
                 print("|                   ")
@@ -147,9 +148,10 @@ def hangman():
                 print("|                  |")
                 print("|                  o")
                 print("|                  |")
-                print("|                 /|\ ")
+                str = r"\ "
+                print("|                 /|", str)
                 print("|                  |")
-                print("|                 / \ ")
+                print("|                 / ", str)
                 print("|                  ")
                 print("|                  ")
                 print("|                   ")
