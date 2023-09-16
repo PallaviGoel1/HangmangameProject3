@@ -2,7 +2,7 @@ import random
 import time
 
 
-#Ask if user want to play again
+# Ask if user want to play again
 def restart_game():
     print("********************************************\n\n")
     print("Would you like to play again?\n")
@@ -69,9 +69,6 @@ def hangman():
             print("|                  ")
             print("|                  ")
             print("|                  ")
-            print("|                  ")
-            print("|                  ")
-            print("|                  ")
             print("-------------------")
 
             if turn == 5:
@@ -85,9 +82,6 @@ def hangman():
                 print("|                  ")
                 print("|                   ")
                 print("|                  ")
-                print("|                  ")
-                print("|                  ")
-                print("|                  ")
                 print("-------------------")
             if turn == 4:
                 print("Number of attempts left: ", turn)
@@ -100,9 +94,6 @@ def hangman():
                 print("|                   ")
                 print("|                   ")
                 print("|                  ")
-                print("|                  ")
-                print("|                  ")
-                print("|                  ")
                 print("-------------------")
             if turn == 3:
                 print("Number of attempts left: ", turn)
@@ -114,9 +105,6 @@ def hangman():
                 print("|                   ")
                 print("|                   ")
                 print("|                   ")
-                print("|                  ")
-                print("|                  ")
-                print("|                  ")
                 print("|                  ")
                 print("-------------------")
             if turn == 2:
@@ -132,9 +120,6 @@ def hangman():
                 print("|                  ")
                 print("|                   ")
                 print("|                  ")
-                print("|                  ")
-                print("|                  ")
-                print("|                  ")
                 print("-------------------")
             if turn == 1:
                 print("Number of attempts left: ", turn)
@@ -148,9 +133,6 @@ def hangman():
                 print("|                   ")
                 print("|                  ")
                 print("|                   ")
-                print("|                  ")
-                print("|                  ")
-                print("|                  ")
                 print("|                  ")
                 print("-------------------")
             # here,finish hangman pic if your turn 0 then you loose game
@@ -167,9 +149,6 @@ def hangman():
                 print("|                  ")
                 print("|                   ")
                 print("|                  ")
-                print("|                  ")
-                print("|                  ")
-                print("|                  ")
                 print("-------------------")
                 print("*************************\n")
                 print("SORRY, YOU LOST THE GAME! Better luck next time!\n")
@@ -180,7 +159,7 @@ def hangman():
 # Main function to start the game
 def main():
     a = input("Please enter your name: \n")
-    print(a)
+    print("\n**************************************\n")
     print("Hello my friend "+a, ", Time to play game!\n")
     print("Number of attempts: 6\n")
     time.sleep(1)
