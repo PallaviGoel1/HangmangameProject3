@@ -4,15 +4,18 @@ import time
 
 # Ask if user want to play again
 def restart_game():
-    print("********************************************\n\n")
-    print("Would you like to play again?\n")
-    ans = input("If Yes, Press 'y' else 'n': \n")
+    str = """
+    **************************************
+    Would you like to play again?
+    If Yes, Press 'y' else 'n': """
+    print(str)
+    ans = input()
     if ans == "y":
         hangman()
     elif ans == "n":
-        print("******************\n")
+        print("**************************************\n")
         print("Thanks for Playing!\n")
-        print("******************\n")
+        print("***************************************\n")
         exit()
     else:
         print("\n*** Sorry, Incorrect Input. Try again please ***\n")
@@ -36,16 +39,16 @@ def hangman():
                 main_word = main_word + letter
             else:
                 main_word = main_word + "_ "
-        
+
         # Declare win when word is complete
         if main_word == word:
             print(main_word)
-            print("**********\n")
+            print("**************************************\n")
             print("Hurray, YOU WON !!\n")
-            print("**********\n")
+            print("**************************************\n")
             time.sleep(1)
             restart_game()
-        
+
         # print main word on correct postion
         print("\nWrite a letter for the word", main_word)
         guess = input()
@@ -55,7 +58,7 @@ def hangman():
         else:
             print("enter valid letters \n")
             guess = input()
-        
+            
         # Reduce turn if input is wrong and print hangman
         if guess not in word:
             turn = turn-1
@@ -150,17 +153,17 @@ def hangman():
                 print("|                   ")
                 print("|                  ")
                 print("-------------------")
-                print("*************************\n")
+                print("**************************************\n")
                 print("SORRY, YOU LOST THE GAME! Better luck next time!\n")
-                print("*************************\n")
+                print("**************************************\n")
                 restart_game()
 
 
 # Main function to start the game
 def main():
-    a = input("Please enter your name: \n")
+    a = input("Please enter your name: ")
     print("\n**************************************\n")
-    print("Hello my friend "+a, ", Time to play game!\n")
+    print("Hello my friend "+a, ", Let's start the game!\n")
     print("Number of attempts: 6\n")
     time.sleep(1)
     hangman()
@@ -168,5 +171,5 @@ def main():
 
 # Starting message of the program
 print("Welcome to the Hangman Game!")
-print("*****************************\n")
+print("**************************************\n")
 main()
