@@ -26,8 +26,9 @@ def restart_game():
 # define a hangman function for game run
 def hangman():
     # make words list according to different levels
-    word_list_1 = ["lion", "moon", "sun", "butterfly"]
-    word = random.choice(word_list_1)
+    # word_list_1 = ["lion", "moon", "sun", "butterfly"]
+    # word = random.choice(word_list_1)
+    word = r_word()
     turn = 6
     guessmade = ''
     # define valid inputs
@@ -63,7 +64,7 @@ def hangman():
         # Reduce turn if input is wrong and print hangman
         if guess not in word:
             turn = turn-1
-            print("Number of attempts left: ", turn)
+            print("Number of wrong attempts left: ", turn)
             print("-------------------")  # here,start draw hangman
             print("|                  |")
             print("|                  ")
@@ -76,7 +77,7 @@ def hangman():
             print("-------------------")
 
             if turn == 5:
-                print("Number of attempts left: ", turn)
+                print("Number of wrong attempts left: ", turn)
                 print("-------------------")
                 print("|                  |")
                 print("|                  o")
@@ -88,7 +89,7 @@ def hangman():
                 print("|                  ")
                 print("-------------------")
             if turn == 4:
-                print("Number of attempts left: ", turn)
+                print("Number of wrong attempts left: ", turn)
                 print("-------------------")
                 print("|                  |")
                 print("|                  o")
@@ -100,7 +101,7 @@ def hangman():
                 print("|                  ")
                 print("-------------------")
             if turn == 3:
-                print("Number of attempts left: ", turn)
+                print("Number of wrong attempts left: ", turn)
                 print("-------------------")
                 print("|                  |")
                 print("|                  o")
@@ -112,7 +113,7 @@ def hangman():
                 print("|                  ")
                 print("-------------------")
             if turn == 2:
-                print("Number of attempts left: ", turn)
+                print("Number of wrong attempts left: ", turn)
                 print("-------------------")
                 print("|                  |")
                 print("|                  o")
@@ -127,7 +128,7 @@ def hangman():
                 print("|                  ")
                 print("-------------------")
             if turn == 1:
-                print("Number of attempts left: ", turn)
+                print("Number of wrong attempts left: ", turn)
                 print("-------------------")
                 print("|                  |")
                 print("|                  o")
@@ -143,7 +144,7 @@ def hangman():
                 print("-------------------")
             # here,finish hangman pic if your turn 0 then you loose game
             if turn == 0:
-                print("Number of attempts left: ", turn)
+                print("Number of wrong attempts left: ", turn)
                 print("-------------------")
                 print("|                  |")
                 print("|                  o")
@@ -168,9 +169,18 @@ def main():
     a = input("Please enter your name: ")
     print("\n**************************************\n")
     print("Hello my friend "+a, ", Let's start the game!\n")
-    print("Number of attempts: 6\n")
+    print("Number of wrong attempts: 6\n")
     time.sleep(1)
     hangman()
+
+
+# Select random word from list according to different levels
+def r_word():
+    word_list_1 = ["lion", "moon", "sun", "cake", "cave"]
+    # word_list_2 = ["accuse", "cuddle", "careless", "butterfly"]
+    # word_list_3 = ["abirritant", "aftershave", "", ""]
+    r_word = random.choice(word_list_1)
+    return r_word
 
 
 # Starting message of the program
