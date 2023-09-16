@@ -186,8 +186,8 @@ def r_word():
 def get_word(lvl):
     if lvl == 1:
         with open('word_1.txt') as txt:
-            listlen = txt.readlines()
-            rownum = random.randint(0, listlen - 1)
+            lstlen = txt.readlines()
+            rownum = random.randint(0, lstlen - 1)
             word = txt.read(rownum)
             return word
 
