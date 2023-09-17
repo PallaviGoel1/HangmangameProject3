@@ -1,5 +1,6 @@
 import random
 import time
+import word_1
 
 
 # Ask if user want to play again
@@ -25,7 +26,7 @@ def hangman():
     # make words list according to different levels
     # word_list_1 = ["lion", "moon", "sun", "butterfly"]
     # word = random.choice(word_list_1)
-    word = r_word()
+    word = get_word()
     turn = 6
     guessmade = ''
     # define valid inputs
@@ -172,24 +173,17 @@ def main():
 
 
 # Select random word from list according to different levels
-def r_word():
+def get_word():
     # word_list_1 = ["lion", "moon", "sun", "cake", "cave", "dark", "earth"]
     # r_word = random.choice(word_list_1)
     # word_list_2 = ["accuse", "cuddle", "careless", "butterfly",
     # "certificate"]
     # word_list_3 = ["abirritant", "aftershave", "cavitation",
     # ""]
-    r_word = get_word(1)
-    return r_word
-
-
-def get_word(lvl):
+    lvl = 1
     if lvl == 1:
-        with open('word_1.txt') as txt:
-            lstlen = len(txt.readlines())
-            rownum = random.randint(0, lstlen-1)
-            word = txt.read(rownum)
-            return word
+        word = random.choice(word_1.word_list_1)
+        return word
 
 
 # Starting message of the program
