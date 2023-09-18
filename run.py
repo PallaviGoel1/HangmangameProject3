@@ -24,8 +24,6 @@ def restart_game():
 # define a hangman function for game run
 def hangman():
     # make words list according to different levels
-    # word_list_1 = ["lion", "moon", "sun", "butterfly"]
-    # word = random.choice(word_list_1)
     word = get_word()
     turn = 6
     guessmade = ''
@@ -92,7 +90,7 @@ def hangman():
                 print("|                  |")
                 print("|                  o")
                 print("|                  |")
-                print("|                  ")
+                print("|                   ")
                 print("|                   ")
                 print("|                   ")
                 print("|                   ")
@@ -104,7 +102,7 @@ def hangman():
                 print("|                  |")
                 print("|                  o")
                 print("|                  |")
-                print("|                 /| ")
+                print("|                / |")
                 print("|                   ")
                 print("|                   ")
                 print("|                   ")
@@ -117,7 +115,7 @@ def hangman():
                 print("|                  o")
                 print("|                  |")
                 str = r"\ "
-                print("|                 /|", str)
+                print("|                / |", str)
                 print("|                  ")
                 print("|                 ")
                 print("|                  ")
@@ -132,9 +130,9 @@ def hangman():
                 print("|                  o")
                 print("|                  |")
                 str = r"\ "
-                print("|                 /|", str)
+                print("|                / |", str)
                 print("|                  |")
-                print("|                 /")
+                print("|                /  ")
                 print("|                   ")
                 print("|                  ")
                 print("|                   ")
@@ -144,13 +142,13 @@ def hangman():
             if turn == 0:
                 print("Number of wrong attempts left: ", turn)
                 print("-------------------")
-                print("|                  |")
-                print("|                  o")
-                print("|                  |")
+                print("|                   |")
+                print("|                   o")
+                print("|                   |")
                 str = r"\ "
-                print("|                 /|", str)
-                print("|                  |")
-                print("|                 / ", str)
+                print("|                 / |", str)
+                print("|                   |")
+                print("|                 /    ", str)
                 print("|                  ")
                 print("|                  ")
                 print("|                   ")
