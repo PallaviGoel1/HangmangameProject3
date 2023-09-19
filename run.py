@@ -2,7 +2,11 @@ import os
 import random
 import time
 import word_1
+import cv2
 
+img_0=cv2.imread('D:\\Pallavi_Project3\\hangman1.png')
+cv2.imshow('image', img_0)
+cv2.waitkey(0)
 
 # Ask if user want to play again
 def restart_game():
