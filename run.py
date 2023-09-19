@@ -2,6 +2,7 @@ import os
 import random
 import time
 import word_1
+import fristdisplay
 
 
 # Ask if user want to play again
@@ -189,3 +190,4 @@ def get_word():
 print("Welcome to the Hangman Game!")
 print("**************************************\n")
 main()
+fristdisplay.mainloop()
