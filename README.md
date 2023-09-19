@@ -1,6 +1,6 @@
 
 # HANGMAN GAME
-Hangman game is a Python game. It's execute in dark(mock) terminal on Heroku.
+Hangman game is a Python game. It's execute in dark (mock) terminal on Heroku.
 
 ## How to play game
 This hangman game is a single player game. 
@@ -16,7 +16,22 @@ if you write right letters then you win the game ("You win"). but after both con
 
 # CONTENTS
 
-# User Experience (UX)
+## User Experience (UX)
+# User Goals
+# Project Goals
+
+## Design
+## Flowchart
+# Feature
+# Technologies Used
+## Language 
+# Deployment & Local Development
+## Deployment
+## Testing
+## Validator Tests
+## Lighthouse Tests
+# Bugs
+# Credits
 
 
 
