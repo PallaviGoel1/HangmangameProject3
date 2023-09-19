@@ -2,6 +2,9 @@ import os
 import random
 import time
 import word_1
+import colorama
+from colorama import Fore, Back, Style
+colorama.init(autoreset=True)
 
 
 # Ask if user want to play again
@@ -176,9 +179,11 @@ def get_word():
 # Starting message of the program
 print("Welcome to the Hangman Game!")
 print("**************************************\n")
-print("-------------HOW TO PLAY---------------\n")
-print("1-Start the game with your enter name\n")
-print("2-You need to guess the word one at a time\n")
+print("---------------------------------------\n")
+print("------------- HOW TO PLAY-------------\n")
+print("---------------------------------------\n")
+print(Fore.BLUE + "1-Start the game with your enter name\n")
+print(Fore.BLUE + "2-You need to guess the word one at a time\n")
 print("3-Enter the letter and press the enter key\n")
 print("4-If Your letter is right,Your letter will show on the correct place\n")
 print("5-If your letter is wrong,Hangman visible and show,step by step\n")
