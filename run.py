@@ -138,9 +138,9 @@ def hangman():
                 print(Fore.RED + "|                   o")
                 print(Fore.RED + "|                   |")
                 str = r"\ "
-                print(Fore.RED + "|                 / |", str)
+                print(Fore.RED + "|                 / |",Fore.RED + str)
                 print(Fore.RED + "|                   |")
-                print(Fore.RED + "|                 /    ", str)
+                print(Fore.RED + "|                 /    ", Fore.RED + str)
                 print(Fore.RED + "|                  ")
                 print(Fore.RED + "|                  ")
                 print(Fore.RED + "|                   ")
