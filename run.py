@@ -163,14 +163,8 @@ def main():
     hangman()
 
 
-# Select random word from list according to different levels
+# Select random word from word_1 list
 def get_word():
-    # word_list_1 = ["lion", "moon", "sun", "cake", "cave", "dark", "earth"]
-    # r_word = random.choice(word_list_1)
-    # word_list_2 = ["accuse", "cuddle", "careless", "butterfly",
-    # "certificate"]
-    # word_list_3 = ["abirritant", "aftershave", "cavitation",
-    # ""]
     lvl = 1
     if lvl == 1:
         word = random.choice(word_1.word_list_1)
@@ -181,7 +175,7 @@ def get_word():
 print(Fore.RED + "    Welcome to the Hangman Game!")
 print("**************************************\n")
 print("---------------------------------------\n")
-print(Fore.RED +"------------- HOW TO PLAY-------------\n")
+print(Fore.RED + "------------- HOW TO PLAY-------------\n")
 print("---------------------------------------\n")
 print(Fore.YELLOW + "1-Start the game with your enter "
 "name.\n 2-You need to guess the word one at a "
@@ -190,6 +184,5 @@ print(Fore.YELLOW + "1-Start the game with your enter "
 "right,Your letter will show on the correct"
 "place.\n 5-If your small letter is wrong,Hangman visible and show,"
 "step by step.\n 6-keep write until the correct word or you exit the game.\n")
-cl.init()
-print(cl.ansi.clear_screen())
+print("Press the enter key ")
 main()
