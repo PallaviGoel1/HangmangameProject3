@@ -4,24 +4,6 @@ import time
 import word_1
 
 
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
-
-CREDS = Credentials.from_service_account_file('creds.json')
-SCOPEd_CREDS = CREDS.with_scopes(SCOPE)
-GSPREAD_CLIENT = gspread.authorize(SCOPEd_CREDS)
-SHEET = GSPREAD_CLIENT.open('the_hangman')
-
-def clear_terminal():
-    """
-    clear the terminal
-    """
-    os.system("cls" if os.name == "nt" else "clear")
-
-
 # Ask if user want to play again
 def restart_game():
     print("**************************************\n")
