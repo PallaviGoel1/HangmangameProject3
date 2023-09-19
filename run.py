@@ -3,6 +3,7 @@ import random
 import time
 import word_1
 import colorama
+import colorama as cl
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 
@@ -138,9 +139,9 @@ def hangman():
                 print(Fore.RED + "|                   o")
                 print(Fore.RED + "|                   |")
                 str = r"\ "
-                print(Fore.RED + "|                 / |",Fore.RED + str)
+                print(Fore.RED + "|                 / |", str)
                 print(Fore.RED + "|                   |")
-                print(Fore.RED + "|                 /    ", Fore.RED + str)
+                print(Fore.RED + "|                 /    ", str)
                 print(Fore.RED + "|                  ")
                 print(Fore.RED + "|                  ")
                 print(Fore.RED + "|                   ")
@@ -182,11 +183,13 @@ print("**************************************\n")
 print("---------------------------------------\n")
 print(Fore.RED +"------------- HOW TO PLAY-------------\n")
 print("---------------------------------------\n")
-print(Fore.YELLOW + 
-"1-Start the game with your enter name\n"
-"2-You need to guess the word one at a time\n"
-"3-Enter the small letter and press the enter key\n"
-"4-If Your small letter is right,Your letter will show on the correct place\n" 
-"5-If your small letter is wrong,Hangman visible and show,step by step\n"
-"6-keep write until the correct word or you exit the game\n")
+print(Fore.YELLOW + "1-Start the game with your enter "
+"name.\n 2-You need to guess the word one at a "
+"time.\n 3-Enter the small letter and press the "
+"enter key.\n 4-If Your small letter is "
+"right,Your letter will show on the correct"
+"place.\n 5-If your small letter is wrong,Hangman visible and show,"
+"step by step.\n 6-keep write until the correct word or you exit the game.\n")
+cl.init()
+print(cl.ansi.clear_screen())
 main()
