@@ -27,6 +27,15 @@ def restart_game():
         restart_game()
 
 
+def clear_terminal():
+    """
+    clear the terminal
+    """
+    # This line is credited to
+    # https://stackoverflow.com/questions/2084508/clear-terminal-in-python
+    os.system("cls" if os.name == "nt" else "clear")
+
+    
 # define a hangman function for game run
 def hangman():
     # make words list according to different levels
@@ -160,8 +169,10 @@ def main():
     print("\n")
     print("\n**************************************\n")
     a = input("Please enter your name: ")
+
     print("Hello my friend "+a, ", Let's start the game!\n")
     print("Number of wrong attempts: 6\n")
+    print("\n**************************************\n")
     time.sleep(1)
     hangman()
 
