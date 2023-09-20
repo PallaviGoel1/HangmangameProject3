@@ -203,11 +203,11 @@ print(Fore.YELLOW + "3-Number of letters in the word are same as number of '_'.\
 print(Fore.YELLOW + "4-You need to guess the word and enter a letter of that.\n")
 print(Fore.YELLOW + "5-(Please use small letters) And press the enter key.\n")
 str = "6 - If the letter is in the word, respective '_' gets replaced"
-print(str, " with that letter in hidden word\n")
+print(Fore.YELLOW + str, " with that letter in hidden word\n")
 print(Fore.YELLOW + "7-If letter is not in the word, drawing for hangman starts.\n")
 print(Fore.YELLOW + "8- Hangman drawing continues on every wrong input\n")
 str = "9 - If player manage to guess correct word with less than 6 wrong"
-print(str, " attempts, player wins\n")
+print(Fore.YELLOW + str, " attempts, player wins\n")
 str = "10 - If it's been 6 wrong attempts, Hangman drawing completes"
 print(str, " and player loses the game")
 time.sleep(1)
