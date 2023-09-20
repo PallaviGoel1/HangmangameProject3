@@ -4,11 +4,9 @@ import time
 import word_1
 import colorama
 import colorama as cl
-from colored import fg
 from colorama import Fore, Back, Style
 
 colorama.init(autoreset=True)
-color = fg('blue')
 
 
 # Ask if user want to play again
@@ -111,7 +109,7 @@ def hangman():
                 print(Fore.RED + "|                  o")
                 print(Fore.RED + "|                  |")
                 str = r"\ "
-                print(Fore.RED + "|                / |", str)
+                print(Fore.RED + "|                / |", Fore.RED + str)
                 print(Fore.RED + "|                  ")
                 print(Fore.RED + "|                 ")
                 print(Fore.RED + "|                  ")
@@ -126,7 +124,7 @@ def hangman():
                 print(Fore.RED + "|                  o")
                 print(Fore.RED + "|                  |")
                 str = r"\ "
-                print(Fore.RED + "|                / |", str)
+                print(Fore.RED + "|                / |", Fore.RED + str)
                 print(Fore.RED + "|                  |")
                 print(Fore.RED + "|                /  ")
                 print(Fore.RED + "|                   ")
@@ -142,9 +140,9 @@ def hangman():
                 print(Fore.RED + "|                   o")
                 print(Fore.RED + "|                   |")
                 str = r"\ "
-                print(Fore.RED + "|                 / |", str)
+                print(Fore.RED + "|                 / |", Fore.RED + str)
                 print(Fore.RED + "|                   |")
-                print(Fore.RED + "|                 /    ", str)
+                print(Fore.RED + "|                 /    ", Fore.RED + str)
                 print(Fore.RED + "|                  ")
                 print(Fore.RED + "|                  ")
                 print(Fore.RED + "|                   ")
@@ -184,9 +182,9 @@ print(Fore.RED + "|                   |")
 print(Fore.RED + "|                   o")
 print(Fore.RED + "|                   |")
 str = r"\ "
-print(Fore.RED + "|                 / |", str)
+print(Fore.RED + "|                 / |", Fore.RED + str)
 print(Fore.RED + "|                   |")
-print(Fore.RED + "|                 /    ", str)
+print(Fore.RED + "|                 /    ", Fore.RED + str)
 print(Fore.RED + "|                  ")
 print(Fore.RED + "|                  ")
 print(Fore.RED + "|                   ")
@@ -199,19 +197,24 @@ cl.init()
 print(cl.ansi.clear_screen())
 print(Fore.RED + "------------- HOW TO PLAY-------------\n")
 print("---------------------------------------\n")
-print(color + "1-Start the game with your enter name.\n")
-print(Fore.YELLOW + "2-A hidden word will be displayed as a sequence of '_'.\n")
-print(Fore.YELLOW + "3-Number of letters in the word are same as number of '_'.\n")
-print(Fore.YELLOW + "4-You need to guess the word and enter a letter of that.\n")
-print(Fore.YELLOW + "5-(Please use small letters) And press the enter key.\n")
+print(Fore.YELLOW + "1-Start the game with your enter name.\n")
+str = "2-A hidden word will be displayed"
+print(Fore.YELLOW + str, Fore.YELLOW + "as a sequence of '_'.\n")
+str = "3-Number of letters in the word are"
+print(Fore.YELLOW + str, Fore.YELLOW + "same as number of '_'.\n")
+str = "4-You need to guess the word"
+print(Fore.YELLOW + str, Fore.YELLOW + "and enter a letter of that.\n")
+str = "5-(Please use small letters) And"
+print(Fore.YELLOW + str, Fore.YELLOW + "press the enter key.\n")
 str = "6 - If the letter is in the word, respective '_' gets replaced"
-print(Fore.YELLOW + str, " with that letter in hidden word\n")
-print(Fore.YELLOW + "7-If letter is not in the word, drawing for hangman starts.\n")
+print(Fore.YELLOW + str, Fore.YELLOW + "with that letter in hidden word\n")
+str = "7-If letter is not in the word,"
+print(Fore.YELLOW + str, Fore.YELLOW + "drawing for hangman starts.\n")
 print(Fore.YELLOW + "8- Hangman drawing continues on every wrong input\n")
 str = "9 - If player manage to guess correct word with less than 6 wrong"
-print(Fore.YELLOW + str, " attempts, player wins\n")
+print(Fore.YELLOW + str, Fore.YELLOW + " attempts, player wins\n")
 str = "10 - If it's been 6 wrong attempts, Hangman drawing completes"
-print(str, " and player loses the game")
+print(Fore.YELLOW + str, Fore.YELLOW + " and player loses the game")
 time.sleep(1)
 # imitialalize colorama
 cl.init()
