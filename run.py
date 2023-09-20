@@ -4,9 +4,11 @@ import time
 import word_1
 import colorama
 import colorama as cl
+from colored import fg
 from colorama import Fore, Back, Style
 
 colorama.init(autoreset=True)
+color = fg('blue')
 
 
 # Ask if user want to play again
@@ -197,7 +199,7 @@ cl.init()
 print(cl.ansi.clear_screen())
 print(Fore.RED + "------------- HOW TO PLAY-------------\n")
 print("---------------------------------------\n")
-print(Fore.YELLOW + "1-Start the game with your enter name.\n")
+print(color + "1-Start the game with your enter name.\n")
 print(Fore.YELLOW + "2-A hidden word will be displayed as a sequence of '_'.\n")
 print(Fore.YELLOW + "3-Number of letters in the word are same as number of '_'.\n")
 print(Fore.YELLOW + "4-You need to guess the word and enter a letter of that.\n")
@@ -215,4 +217,4 @@ time.sleep(1)
 cl.init()
 # clear the terminal screen
 print(cl.ansi.clear_screen())
-main()
+# main()
