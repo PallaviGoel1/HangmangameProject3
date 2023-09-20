@@ -11,31 +11,22 @@ colorama.init(autoreset=True)
 
 # Ask if user want to play again
 def restart_game():
-    print("**************************************\n")
-    print("Would you like to play again?\n")
-    print("If Yes, Press 'y' else 'n': ")
+    print(Fore.BLUE + "**************************************\n")
+    print(Fore.BLUE + "Would you like to play again?\n")
+    print(Fore.BLUE + "If Yes, Press 'y' else 'n': ")
     ans = input()
     if ans == "y":
         hangman()
     elif ans == "n":
-        print("**************************************\n")
-        print("Thanks for Playing!\n")
-        print("***************************************\n")
+        print(Fore.BLUE + "**************************************\n")
+        print(Fore.BLUE + "Thanks for Playing!\n")
+        print(Fore.BLUE + "***************************************\n")
         exit()
     else:
-        print("\n*** Sorry, Incorrect Input. Try again please ***\n")
+        print(Fore.BLUE + "\n*Sorry, Incorrect Input. Try again please\n")
         restart_game()
 
 
-def clear_terminal():
-    """
-    clear the terminal
-    """
-    # This line is credited to
-    # https://stackoverflow.com/questions/2084508/clear-terminal-in-python
-    os.system("cls" if os.name == "nt" else "clear")
-
-    
 # define a hangman function for game run
 def hangman():
     # make words list according to different levels
@@ -56,9 +47,9 @@ def hangman():
         # Declare win when word is complete
         if main_word == word:
             print(main_word)
-            print("**************************************\n")
-            print("Hurray, YOU WON !!\n")
-            print("**************************************\n")
+            print(Fore.GREEN + "**************************************\n")
+            print(Fore.GREEN + "Hurray, YOU WON !!\n")
+            print(Fore.GREEN + "**************************************\n")
             time.sleep(1)
             restart_game()
 
@@ -69,7 +60,7 @@ def hangman():
         if guess in valid_entry:
             guessmade = guessmade + guess
         else:
-            print("enter valid letters \n")
+            print(Fore.RED + "enter valid letters \n")
             guess = input()
 
         # Reduce turn if input is wrong and print hangman
@@ -167,12 +158,12 @@ def hangman():
 def main():
     show_message()
     print("\n")
-    print("\n**************************************\n")
-    a = input("Please enter your name: ")
+    print(Fore.BLUE + "\n**************************************\n")
+    a = input(Fore.BLUE + "Please enter your name: ")
 
-    print("Hello my friend "+a, ", Let's start the game!\n")
-    print("Number of wrong attempts: 6\n")
-    print("\n**************************************\n")
+    print(Fore.BLUE + "Hello my friend "+a, ", Let's start the game!\n")
+    print(Fore.BLUE + "Number of wrong attempts: 6\n")
+    print(Fore.BLUE + "\n**************************************\n")
     time.sleep(1)
     hangman()
 
@@ -208,7 +199,7 @@ def show_message():
     cl.init()
     # clear the terminal screen
     print(cl.ansi.clear_screen())
-    print(Fore.RED + "------------- HOW TO PLAY-------------\n")
+    print(Fore.YELLOW + "------------- HOW TO PLAY-------------\n")
     print("---------------------------------------\n")
     print(Fore.YELLOW + "1-Start the game with your enter name.\n")
     str = "2-A hidden word will be displayed"
