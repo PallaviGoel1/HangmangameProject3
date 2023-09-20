@@ -11,15 +11,15 @@ colorama.init(autoreset=True)
 
 # Ask if user want to play again
 def restart_game():
-    print(Fore.BLUE + "**************************************\n")
-    print(Fore.BLUE + "Would you like to play again?\n")
-    print(Fore.BLUE + "If Yes, Press 'y' else 'n': ")
+    print("**************************************\n")
+    print(Fore.CYAN + "Would you like to play again?\n")
+    print(Fore.CYAN + "If Yes, Press 'y' else 'n': ")
     ans = input()
     if ans == "y":
         hangman()
     elif ans == "n":
         print(Fore.BLUE + "**************************************\n")
-        print(Fore.BLUE + "Thanks for Playing!\n")
+        print("Thanks for Playing!\n")
         print(Fore.BLUE + "***************************************\n")
         exit()
     else:
@@ -47,9 +47,9 @@ def hangman():
         # Declare win when word is complete
         if main_word == word:
             print(main_word)
-            print(Fore.GREEN + "**************************************\n")
+            print("**************************************\n")
             print(Fore.GREEN + "Hurray, YOU WON !!\n")
-            print(Fore.GREEN + "**************************************\n")
+            print("**************************************\n")
             time.sleep(1)
             restart_game()
 
@@ -158,12 +158,12 @@ def hangman():
 def main():
     show_message()
     print("\n")
-    print(Fore.BLUE + "\n**************************************\n")
-    a = input(Fore.BLUE + "Please enter your name: ")
+    print("\n**************************************\n")
+    a = input(Fore.CYAN + "Please enter your name: ")
 
-    print(Fore.BLUE + "Hello my friend "+a, ", Let's start the game!\n")
-    print(Fore.BLUE + "Number of wrong attempts: 6\n")
-    print(Fore.BLUE + "\n**************************************\n")
+    print("Hello my friend "+a " Let's start the game!\n")
+    print(Fore.CYAN + "Number of wrong attempts: 6\n")
+    print("\n**************************************\n")
     time.sleep(1)
     hangman()
 
@@ -178,7 +178,7 @@ def get_word():
 
 # Starting message of the program
 def show_message():
-    print(Fore.RED + "    Welcome to the Hangman Game!")
+    print(Fore.GREEN + "    Welcome to the Hangman Game!")
     print("**************************************\n")
     print("---------------------------------------\n")
     print(Fore.RED + "-------------------")
