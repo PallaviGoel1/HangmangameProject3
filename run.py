@@ -156,6 +156,7 @@ def hangman():
 
 # Main function to start the game
 def main():
+    show_message()
     a = input("Please enter your name: ")
     print("\n**************************************\n")
     print("Hello my friend "+a, ", Let's start the game!\n")
@@ -173,51 +174,56 @@ def get_word():
 
 
 # Starting message of the program
+def show_message():
+    print(Fore.RED + "    Welcome to the Hangman Game!")
+    print("**************************************\n")
+    print("---------------------------------------\n")
+    print(Fore.RED + "-------------------")
+    print(Fore.RED + "|                   |")
+    print(Fore.RED + "|                   o")
+    print(Fore.RED + "|                   |")
+    str = r"\ "
+    print(Fore.RED + "|                 / |", Fore.RED + str)
+    print(Fore.RED + "|                   |")
+    print(Fore.RED + "|                 /    ", Fore.RED + str)
+    print(Fore.RED + "|                  ")
+    print(Fore.RED + "|                  ")
+    print(Fore.RED + "|                   ")
+    print(Fore.RED + "|                  ")
+    print(Fore.RED + "-------------------")
+    time.sleep(1)
+    # imitialalize colorama
+    cl.init()
+    # clear the terminal screen
+    print(cl.ansi.clear_screen())
+    print(Fore.RED + "------------- HOW TO PLAY-------------\n")
+    print("---------------------------------------\n")
+    print(Fore.YELLOW + "1-Start the game with your enter name.\n")
+    str = "2-A hidden word will be displayed"
+    print(Fore.YELLOW + str, Fore.YELLOW + "as a sequence of '_'.\n")
+    str = "3-Number of letters in the word are"
+    print(Fore.YELLOW + str, Fore.YELLOW + "same as number of '_'.\n")
+    str = "4-You need to guess the word"
+    print(Fore.YELLOW + str, Fore.YELLOW + "and enter a letter of that.\n")
+    str = "5-(Please use small letters) And"
+    print(Fore.YELLOW + str, Fore.YELLOW + "press the enter key.\n")
+    str = "6 - If the letter is in the word, respective '_' gets replaced"
+    print(Fore.YELLOW + str, Fore.YELLOW + "with that letter in hidden word\n")
+    str = "7-If letter is not in the word,"
+    print(Fore.YELLOW + str, Fore.YELLOW + "drawing for hangman starts.\n")
+    print(Fore.YELLOW + "8- Hangman drawing continues on every wrong input\n")
+    str = "9 - If player manage to guess correct word with less than 6 wrong"
+    print(Fore.YELLOW + str, Fore.YELLOW + " attempts, player wins\n")
+    str = "10 - If it's been 6 wrong attempts, Hangman drawing completes"
+    print(Fore.YELLOW + str, Fore.YELLOW + " and player loses the game")
+    time.sleep(5)
+    # imitialalize colorama
+    cl.init()
+    # clear the terminal screen
+    print(cl.ansi.clear_screen())
+
+
 print("**************************************\n")
-print(Fore.RED + "    Welcome to the Hangman Game!")
-print("**************************************\n")
-print("---------------------------------------\n")
-print(Fore.RED + "-------------------")
-print(Fore.RED + "|                   |")
-print(Fore.RED + "|                   o")
-print(Fore.RED + "|                   |")
-str = r"\ "
-print(Fore.RED + "|                 / |", Fore.RED + str)
-print(Fore.RED + "|                   |")
-print(Fore.RED + "|                 /    ", Fore.RED + str)
-print(Fore.RED + "|                  ")
-print(Fore.RED + "|                  ")
-print(Fore.RED + "|                   ")
-print(Fore.RED + "|                  ")
-print(Fore.RED + "-------------------")
-time.sleep(1)
-# imitialalize colorama
-cl.init()
-# clear the terminal screen
-print(cl.ansi.clear_screen())
-print(Fore.RED + "------------- HOW TO PLAY-------------\n")
-print("---------------------------------------\n")
-print(Fore.YELLOW + "1-Start the game with your enter name.\n")
-str = "2-A hidden word will be displayed"
-print(Fore.YELLOW + str, Fore.YELLOW + "as a sequence of '_'.\n")
-str = "3-Number of letters in the word are"
-print(Fore.YELLOW + str, Fore.YELLOW + "same as number of '_'.\n")
-str = "4-You need to guess the word"
-print(Fore.YELLOW + str, Fore.YELLOW + "and enter a letter of that.\n")
-str = "5-(Please use small letters) And"
-print(Fore.YELLOW + str, Fore.YELLOW + "press the enter key.\n")
-str = "6 - If the letter is in the word, respective '_' gets replaced"
-print(Fore.YELLOW + str, Fore.YELLOW + "with that letter in hidden word\n")
-str = "7-If letter is not in the word,"
-print(Fore.YELLOW + str, Fore.YELLOW + "drawing for hangman starts.\n")
-print(Fore.YELLOW + "8- Hangman drawing continues on every wrong input\n")
-str = "9 - If player manage to guess correct word with less than 6 wrong"
-print(Fore.YELLOW + str, Fore.YELLOW + " attempts, player wins\n")
-str = "10 - If it's been 6 wrong attempts, Hangman drawing completes"
-print(Fore.YELLOW + str, Fore.YELLOW + " and player loses the game")
-time.sleep(1)
-# imitialalize colorama
-cl.init()
-# clear the terminal screen
-print(cl.ansi.clear_screen())
-# main()
+
+
+main()
