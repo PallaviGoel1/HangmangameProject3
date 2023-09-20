@@ -191,7 +191,7 @@ def show_message():
     print(Fore.RED + "|                   ")
     print(Fore.RED + "|                  ")
     print(Fore.RED + "-------------------")
-    time.sleep(1.5)
+    time.sleep(5)
     # imitialalize colorama
     cl.init()
     # clear the terminal screen
