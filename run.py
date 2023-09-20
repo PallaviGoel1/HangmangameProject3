@@ -1,10 +1,10 @@
-import os
-import random
-import time
-import word_1
-import colorama
-import colorama as cl
-from colorama import Fore, Back, Style
+import os  # credit to stackoverflow.com
+import random  # generates a random number
+import time  # This function use for handle time & date
+import word_1  # word list .py file
+import colorama  # print colored terminal text
+import colorama as cl  # cl (clear screen function)
+from colorama import Fore  # change the foreground color
 
 colorama.init(autoreset=True)
 
