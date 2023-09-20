@@ -161,7 +161,7 @@ def main():
     print("\n**************************************\n")
     a = input(Fore.CYAN + "Please enter your name: ")
 
-    print("Hello my friend "+a " Let's start the game!\n")
+    print("Hello my friend "+a, " Let's start the game!\n")
     print(Fore.CYAN + "Number of wrong attempts: 6\n")
     print("\n**************************************\n")
     time.sleep(1)
