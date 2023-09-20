@@ -2,7 +2,7 @@ import os
 import random
 import time
 import word_1
-# import colorama
+import colorama
 import colorama as cl
 from colorama import Fore, Back, Style
 
@@ -197,12 +197,19 @@ cl.init()
 print(cl.ansi.clear_screen())
 print(Fore.RED + "------------- HOW TO PLAY-------------\n")
 print("---------------------------------------\n")
-print(Fore.YELLOW + " 1-Start the game with your enter name.\n")
-print("2-You need to guess the word one at atime.\n")
-print("3-Enter the small letter and press the enter key.\n")
-print("4-If Your letter is right,it will show on the correct place.\n")
-print("5-If your letter is wrong, Hangman will gradually show.\n")
-print("6-keep write until the correct word or you exit the game.\n")
+print(Fore.YELLOW + "1-Start the game with your enter name.\n")
+print(Fore.YELLOW + "2-A hidden word will be displayed as a sequence of '_'.\n")
+print(Fore.YELLOW + "3-Number of letters in the word are same as number of '_'.\n")
+print(Fore.YELLOW + "4-You need to guess the word and enter a letter of that.\n")
+print(Fore.YELLOW + "5-(Please use small letters) And press the enter key.\n")
+str = "6 - If the letter is in the word, respective '_' gets replaced"
+print(str, " with that letter in hidden word\n")
+print(Fore.YELLOW + "7-If letter is not in the word, drawing for hangman starts.\n")
+print(Fore.YELLOW + "8- Hangman drawing continues on every wrong input\n")
+str = "9 - If player manage to guess correct word with less than 6 wrong"
+print(str, " attempts, player wins\n")
+str = "10 - If it's been 6 wrong attempts, Hangman drawing completes"
+print(str, " and player loses the game")
 time.sleep(1)
 # imitialalize colorama
 cl.init()
