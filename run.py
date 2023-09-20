@@ -157,8 +157,9 @@ def hangman():
 # Main function to start the game
 def main():
     show_message()
-    a = input("Please enter your name: ")
+    print("\n")
     print("\n**************************************\n")
+    a = input("Please enter your name: ")
     print("Hello my friend "+a, ", Let's start the game!\n")
     print("Number of wrong attempts: 6\n")
     time.sleep(1)
