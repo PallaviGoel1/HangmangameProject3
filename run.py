@@ -5,6 +5,7 @@ import word_1
 import colorama
 import colorama as cl
 from colorama import Fore, Back, Style
+
 colorama.init(autoreset=True)
 
 
