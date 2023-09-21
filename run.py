@@ -159,8 +159,8 @@ def main():
     show_message()
     print("\n")
     print("\n**************************************\n")
+    lvl = input("Choose a level 1 or level 2")
     a = input(Fore.CYAN + "Please enter your name: ")
-
     print("Hello my friend "+a, " Let's start the game!\n")
     print(Fore.CYAN + "Number of wrong attempts: 6\n")
     print("\n**************************************\n")
@@ -173,6 +173,9 @@ def get_word():
     lvl = 1
     if lvl == 1:
         word = random.choice(word_1.word_list_1)
+    elif lvl == 2:
+        word = random.choice(word_1.word_list_2)
+    else:
         return word
 
 
