@@ -200,7 +200,7 @@ def show_message():
     print("|                   ")
     print("|                  ")
     print("-------------------")
-    time.sleep(5)
+    time.sleep(2)
     # imitialalize colorama
     cl.init()
     # clear the terminal screen
