@@ -179,6 +179,7 @@ def get_word():
         return word
     elif lvl == 3:
         word = random.choice(word_1.word_list_3)
+        return word
     else:
         print("Wrong choice")
 
@@ -230,7 +231,6 @@ def show_message():
     print(Fore.YELLOW + "\n------------Rules----------\n")
     print("Any key press for start the game")
     input()
-    print("\n")
     print(Fore.YELLOW + "\n---------------------------\n")
     # imitialalize colorama
     # cl.init()
