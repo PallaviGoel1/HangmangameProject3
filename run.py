@@ -13,7 +13,7 @@ colorama.init(autoreset=True)
 def restart_game():
     print("**************************************\n")
     print(Fore.CYAN + "Would you like to play again?\n")
-    print(Fore.CYAN + "If Yes, Press 'y' else 'n': ")
+    print(Fore.GREEN + "If Yes, Press 'y' else 'n': ")
     ans = input()
     if ans == "y":
         hangman()
@@ -151,7 +151,7 @@ def hangman():
                 print("**************************************\n")
                 print("SORRY, YOU LOST THE GAME! Better luck next time!\n")
                 print("**************************************\n")
-                print(word, "was the answer")
+                print("----------", word, "------was the answer")
                 restart_game()
 
 
@@ -186,19 +186,19 @@ def show_message():
     print(Fore.GREEN + "    Welcome to the Hangman Game!")
     print("**************************************\n")
     print("---------------------------------------\n")
-    print(Fore.RED + "-------------------")
-    print(Fore.RED + "|                   |")
-    print(Fore.RED + "|                   o")
-    print(Fore.RED + "|                   |")
+    print("-------------------")
+    print("|                   |")
+    print("|                   o")
+    print("|                   |")
     str = r"\ "
-    print(Fore.RED + "|                 / |", Fore.RED + str)
-    print(Fore.RED + "|                   |")
-    print(Fore.RED + "|                 /    ", Fore.RED + str)
-    print(Fore.RED + "|                  ")
-    print(Fore.RED + "|                  ")
-    print(Fore.RED + "|                   ")
-    print(Fore.RED + "|                  ")
-    print(Fore.RED + "-------------------")
+    print("|                 / |", str)
+    print("|                   |")
+    print("|                 /    ", str)
+    print("|                  ")
+    print("|                  ")
+    print("|                   ")
+    print("|                  ")
+    print("-------------------")
     time.sleep(5)
     # imitialalize colorama
     cl.init()
@@ -224,7 +224,11 @@ def show_message():
     print(Fore.YELLOW + str, Fore.YELLOW + " attempts, player wins\n")
     str = "10 - If it's been 6 wrong attempts, Hangman drawing completes"
     print(Fore.YELLOW + str, Fore.YELLOW + " and player loses the game")
-    time.sleep(5)
+    # time.sleep(5)
+    print("---------------------------------------\n")
+    print("\n")
+    print("Any key press for start the game")
+    return()
     # imitialalize colorama
     cl.init()
     # clear the terminal screen
