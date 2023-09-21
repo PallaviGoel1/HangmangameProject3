@@ -160,7 +160,7 @@ def hangman():
 def main():
     show_message()
     print("\n")
-    print(Fore.CYAN + "\n**************************************\n")
+    print(Fore.YELLOW + "\n------------Rules----------\n")
     a = input("Please enter your name: ")
     print("Hello my friend "+a, " Let's start the game!\n")
     print("Number of wrong attempts: 6\n")
