@@ -151,6 +151,7 @@ def hangman():
                 print("**************************************\n")
                 print("SORRY, YOU LOST THE GAME! Better luck next time!\n")
                 print("**************************************\n")
+                print(word, "was the answer")
                 restart_game()
 
 
@@ -159,7 +160,6 @@ def main():
     show_message()
     print("\n")
     print("\n**************************************\n")
-    lvl = input("Choose a level 1 or level 2")
     a = input(Fore.CYAN + "Please enter your name: ")
     print("Hello my friend "+a, " Let's start the game!\n")
     print(Fore.CYAN + "Number of wrong attempts: 6\n")
@@ -170,13 +170,15 @@ def main():
 
 # Select random word from word_1 list
 def get_word():
-    lvl = 1
+    lvl = int(input("Choose a level 1 or level 2: "))
     if lvl == 1:
         word = random.choice(word_1.word_list_1)
+        return word
     elif lvl == 2:
         word = random.choice(word_1.word_list_2)
-    else:
         return word
+    else:
+        print("Wrong choice")
 
 
 # Starting message of the program

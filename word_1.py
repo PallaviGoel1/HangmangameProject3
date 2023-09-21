@@ -9,3 +9,15 @@ word_list_1 = [
     "hello",
     "kite"
     ]
+word_list_2 = [
+    "important",
+    "excellent",
+    "friendship",
+    "chickenpox",
+    "submission",
+    "experience",
+    "dedication",
+    "dictionary",
+    "investment",
+    "confidence"
+    ]
