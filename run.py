@@ -226,8 +226,8 @@ def show_message():
     print(Fore.YELLOW + str, Fore.YELLOW + " and player loses the game")
     # time.sleep(5)
     print("\n")
-    print("Any key press for start the game")
-    return()
+    # print("Any key press for start the game")
+    # return()
     # imitialalize colorama
     # cl.init()
     # clear the terminal screen
