@@ -7,9 +7,32 @@ word_list_1 = [
     "dark",
     "earth",
     "hello",
-    "kite"
+    "kite",
+    "saga",
+    "image",
+    "Banana",
+    "Baby",
+    "College"
     ]
 word_list_2 = [
+    "annual",
+    "classic",
+    "diversity",
+    "evident",
+    "export",
+    "finance",
+    "hybrid",
+    "income",
+    "parameter",
+    "reliance",
+    "sector",
+    "tradition",
+    "Japanese",
+    "Newsletter"
+    ]
+word_list_3 = [
+    "Reflection",
+    "Pedagogy",
     "important",
     "excellent",
     "friendship",
@@ -19,5 +42,7 @@ word_list_2 = [
     "dedication",
     "dictionary",
     "investment",
-    "confidence"
+    "confidence",
+    "transformation",
+    "acknowledgement"
     ]
