@@ -160,7 +160,6 @@ def hangman():
 def main():
     show_message()
     print("\n")
-    print(Fore.YELLOW + "\n------------Rules----------\n")
     a = input("Please enter your name: ")
     print("Hello my friend "+a, " Let's start the game!\n")
     print("Number of wrong attempts: 6\n")
@@ -171,13 +170,15 @@ def main():
 
 # Select random word from word_1 list
 def get_word():
-    lvl = int(input("Choose a level 1 or level 2: "))
+    lvl = int(input("Choose a level 1 or level 2 or level 3: "))
     if lvl == 1:
         word = random.choice(word_1.word_list_1)
         return word
     elif lvl == 2:
         word = random.choice(word_1.word_list_2)
         return word
+    elif lvl == 3:
+        word = random.choice(word_1.word_list_3)
     else:
         print("Wrong choice")
 
@@ -226,8 +227,11 @@ def show_message():
     print(Fore.YELLOW + str, Fore.YELLOW + " and player loses the game")
     # time.sleep(5)
     print("\n")
-    # print("Any key press for start the game")
-    # return()
+    print(Fore.YELLOW + "\n------------Rules----------\n")
+    print("Any key press for start the game")
+    input()
+    print("\n")
+    print(Fore.YELLOW + "\n---------------------------\n")
     # imitialalize colorama
     # cl.init()
     # clear the terminal screen
