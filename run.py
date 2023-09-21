@@ -152,6 +152,7 @@ def hangman():
                 print("SORRY, YOU LOST THE GAME! Better luck next time!\n")
                 print("**************************************\n")
                 print("----------", word, "------was the answer")
+                print("\n")
                 restart_game()
 
 
@@ -159,11 +160,11 @@ def hangman():
 def main():
     show_message()
     print("\n")
-    print("\n**************************************\n")
-    a = input(Fore.CYAN + "Please enter your name: ")
+    print(Fore.CYAN + "\n**************************************\n")
+    a = input("Please enter your name: ")
     print("Hello my friend "+a, " Let's start the game!\n")
-    print(Fore.CYAN + "Number of wrong attempts: 6\n")
-    print("\n**************************************\n")
+    print("Number of wrong attempts: 6\n")
+    print(Fore.CYAN + "\n**************************************\n")
     time.sleep(1)
     hangman()
 
@@ -205,7 +206,6 @@ def show_message():
     # clear the terminal screen
     print(cl.ansi.clear_screen())
     print(Fore.YELLOW + "------------- HOW TO PLAY-------------\n")
-    print("---------------------------------------\n")
     print(Fore.YELLOW + "1-Start the game with your enter name.\n")
     str = "2-A hidden word will be displayed"
     print(Fore.YELLOW + str, Fore.YELLOW + "as a sequence of '_'.\n")
@@ -225,14 +225,13 @@ def show_message():
     str = "10 - If it's been 6 wrong attempts, Hangman drawing completes"
     print(Fore.YELLOW + str, Fore.YELLOW + " and player loses the game")
     # time.sleep(5)
-    print("---------------------------------------\n")
     print("\n")
     print("Any key press for start the game")
     return()
     # imitialalize colorama
-    cl.init()
+    # cl.init()
     # clear the terminal screen
-    print(cl.ansi.clear_screen())
+    # print(cl.ansi.clear_screen())
 
 
 print("**************************************\n")
