@@ -11,8 +11,8 @@ colorama.init(autoreset=True)
 
 # Ask if user want to play again
 def restart_game():
-    print(Fore.CYAN + "Would you like to play again?\n")
-    print(Fore.GREEN + "If Yes, Press 'y' else 'n': ")
+    print(Fore.CYAN + "Would you like to play again? If Yes, Press 'y' else 'n':\n")
+   # print(Fore.GREEN + "If Yes, Press 'y' else 'n': ")
     ans = input()
     if ans == "y":
         hangman()
@@ -45,10 +45,10 @@ def hangman():
 
         # Declare win when word is complete
         if main_word == word:
-            print("************************************************************\n")
-            print(Fore.GREEN + "Hurray, YOU WON !!\n")
+            print(Fore.GREEN + "************************************************************\n")
+            print("Hurray, YOU WON !!\n")
             print("-----------------------", word, "------------- was the answer\n")
-            print("************************************************************\n")
+            print(Fore.GREEN + "************************************************************\n")
             time.sleep(1)
             restart_game()
 
@@ -148,9 +148,9 @@ def hangman():
                 print(Fore.GREEN + "|                  ")
                 print(Fore.GREEN + "-------------------")
                 print("*****************************************************\n")
-                print("SORRY, YOU LOST THE GAME! Better luck next time!\n")
+                print(Fore.BLUE + "SORRY, YOU LOST THE GAME! Better luck next time!\n")
                 print("******************************************************\n")
-                print("------------------", word, "------------- was the answer")
+                print(Fore.BLUE + "------------------", word, Fore.BLUE + "------------- was the answer")
                 print("\n")
                 restart_game()
 
@@ -204,8 +204,8 @@ def show_message():
     cl.init()
     # clear the terminal screen
     print(cl.ansi.clear_screen())
-    print(Fore.YELLOW + "------------------ HOW TO PLAY -----------------------------\n")
-    print(Fore.YELLOW + "1-Start the game with your enter name.\n")
+    print(Fore.YELLOW + "\n------------------ HOW TO PLAY -----------------------------")
+    print(Fore.YELLOW + "1-Start the game by your name and select level.\n")
     str = "2-A hidden word will be displayed"
     print(Fore.YELLOW + str, Fore.YELLOW + "as a sequence of '_'.\n")
     str = "3-Number of letters in the word are"
@@ -227,7 +227,7 @@ def show_message():
     print(Fore.YELLOW + "------------------------------------------------------------------------------\n")
     print("Press any key to start the game")
     input()
-    print(Fore.YELLOW + "-------------------------------------------------------------------------------\n")
+    print(Fore.CYAN + "-------------------------------------------------------------------------------\n")
     # imitialalize colorama
     # cl.init()
     # clear the terminal screen
