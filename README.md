@@ -29,7 +29,7 @@ On this screen step by step instructions are mentioned for the player to underst
 # Start Screen
 Here player will be asked to enter the name and to select the level of the game, player wants to play with
 
-![startscreenimage](/images/choosegamelevel.png)
+![startscreenimage](/images/startgame.png)
 
 ## In the Game
 As soon player choose to start (or restart the game), this screen will show up which is having a hidden word for player to guess. Only known here is the length of word
@@ -69,10 +69,8 @@ Though the app is complete and functioning smoothly, there are still few improve
 
 ## Deployment
 Deployment of this project is done via Heroku. Steps followed are as follows:
-
-1-   Ensure that latest code changes are pushed to GitHub repository
-
-2-  Login to Heroku
+1- Ensure that latest code changes are pushed to GitHub repository
+2- Login to Heroku
 
 3-   Click on “Create New App”
 
