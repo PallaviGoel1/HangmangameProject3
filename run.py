@@ -183,7 +183,7 @@ def get_word():
             lvl = int(g_lvl)
             val_in = 1
         else:
-            print("Please enter valid input\n")
+            print("\n Please enter valid input\n")
     # Select word according to level
     if lvl == 1:
         word = random.choice(word_1.word_list_1)
