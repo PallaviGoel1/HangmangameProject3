@@ -47,34 +47,55 @@ The game will end when player wins or loses. At the end of game, player will be 
 
 # Future Roadmap
 Though the app is complete and functioning smoothly, there are still few improvement/enhancements can be added later. Few of them are:
-1- More precise definition of different levels can be added
-2- Words list can be linked to a dictionary so that wider range of words could be available for user to guess from
-3- Number of wins and looses can be counted and added to screen every time game ends
-4- Historical records can be displayed
-5- User registration process can be included
+
+1-      More precise definition of different levels can be added
+
+2-      Words list can be linked to a dictionary so that wider range of words could be available for user to guess from
+
+3-      Number of wins and looses can be counted and added to screen every time game ends
+
+4-      Historical records can be displayed
+
+5-      User registration process can be included
 
  
 
 # Technologies Used
-Language: Python
-Version Control: GitHub
-Coding/Debugging: Codeanywhere
-Deployment: Heroku
+        Language: Python
+
+        Version Control: GitHub
+
+        Coding/Debugging: Codeanywhere
+
+        Deployment: Heroku
 
 ## Deployment
 Deployment of this project is done via Heroku. Steps followed are as follows:
+
 1-   Ensure that latest code changes are pushed to GitHub repository
+
 2-  Login to Heroku
+
 3-   Click on “Create New App”
+
 4-   Choose a unique name for the app and the region
+
 5-   Add build packs- Python and Nodejs
+
 6-   Go to 'Deploy' tab
+
 7-   Select GitHub as deployment method
+
 8-   Click connect
+
 9-   Enter GitHub repository name and search
+
 10-  Click connect
+
 11-  Click on deploy branch
+
 12-  Click on view app
+
 13-  App opened in new screen (this url can be used now to access the deployed app)
 
 # Quality Checks
@@ -82,7 +103,9 @@ I tried to perform thorough testing on this from various perspectives to ensure 
 
 ## Validator Tests
 All the code parts have been tested through in-built validator in IDE (codeanywhere) and passed the test after few fixes. Files with major code are:
+
 1  Run.py
+
 2  Word_1.py
 
 ## Functional Tests
@@ -90,16 +113,22 @@ The flow of the code with various combinations of valid/invalid values has been 
 
 ## GUI Tests
 Many tests were performed from the user interface experience perspective and after few fixes, tests are passed.
+
 Lighthouse Tests
+
 Lighthouse application tests are here for this app
 
 ![performanceandaccessibilityresult]()
 
 ## Bugs
 Few issues were noted during testing and could manage to fix all of those before submitting the final app. Few of those are here with respective fixes:
+
 1- After entering 'n' at restart query, game was not ending: Exit() function was not placed correctly
+
 2- Hangman picture was not placed and visible correctly: Fixed some special characters in the code
+
 3- Errors in validator noticed: Extra spaces and length of code in line were causing this
+
 ## Credits
 I fetched help for coding from tutorial provided by Code Institute, W3 Schools, and Slack community.
 
