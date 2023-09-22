@@ -53,6 +53,7 @@ Though the app is complete and functioning smoothly, there are still few improve
  
 
 # Technologies Used
+Following tools and technologies are used for this project:\    
     Language: Python\
     Version Control: GitHub\
     Coding/Debugging: Codeanywhere\
