@@ -162,7 +162,7 @@ def check_letter(the_word):
     valid_entry = set("abcdefghijklmnopqrstuvwxyz")
     val_in = 0
     while val_in == 0:
-        print("\n Write a letter for the word ", the_word)
+        print(Fore.WHITE + "\n Write a letter for the word ", the_word)
         guess = input()
         if guess in valid_entry:
             val_in = 1
