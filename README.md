@@ -46,15 +46,13 @@ The game will end when player wins or loses. At the end of game, player will be 
 # Future Roadmap
 Though the app is complete and functioning smoothly, there are still few improvement/enhancements can be added later. Few of them are:
 
-1-      More precise definition of different levels can be added
+1- More precise definition of different levels can be added\
+2- Words list can be linked to a dictionary so that wider range of words could be available for user to guess from\
+3- Number of wins and looses can be counted and added to screen every time game ends
 
-2-      Words list can be linked to a dictionary so that wider range of words could be available for user to guess from
+4- Historical records can be displayed
 
-3-      Number of wins and looses can be counted and added to screen every time game ends
-
-4-      Historical records can be displayed
-
-5-      User registration process can be included
+5- User registration process can be included
 
  
 
@@ -69,30 +67,32 @@ Though the app is complete and functioning smoothly, there are still few improve
 
 ## Deployment
 Deployment of this project is done via Heroku. Steps followed are as follows:
+
 1- Ensure that latest code changes are pushed to GitHub repository
+
 2- Login to Heroku
 
-3-   Click on “Create New App”
+3- Click on “Create New App”
 
-4-   Choose a unique name for the app and the region
+4- Choose a unique name for the app and the region
 
-5-   Add build packs- Python and Nodejs
+5- Add build packs- Python and Nodejs
 
-6-   Go to 'Deploy' tab
+6- Go to 'Deploy' tab
 
-7-   Select GitHub as deployment method
+7- Select GitHub as deployment method
 
-8-   Click connect
+8- Click connect
 
-9-   Enter GitHub repository name and search
+9- Enter GitHub repository name and search
 
-10-  Click connect
+10- Click connect
 
-11-  Click on deploy branch
+11- Click on deploy branch
 
-12-  Click on view app
+12- Click on view app
 
-13-  App opened in new screen (this url can be used now to access the deployed app)
+13- App opened in new screen (this url can be used now to access the deployed app)
 
 # Quality Checks
 I tried to perform thorough testing on this from various perspectives to ensure that final product would be a quality app. Some highlights from testing are:
