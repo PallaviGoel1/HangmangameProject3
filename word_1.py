@@ -10,8 +10,8 @@ word_list_1 = [
     "kite",
     "saga",
     "image",
-    "Banana",
-    "Baby",
+    "banana",
+    "baby",
     "College"
     ]
 word_list_2 = [
