@@ -6,44 +6,42 @@ number of letters there are in the word and the hangman picture starts to draw o
 And after certain incorrect guesses, a so-called man is hanged in the picture and the game ends with a loss.
 If a player manages to guess the word correctly, it's a win. 
 
-![hangmanmediaimage]()
+![hangmanmediaimage](/images/)
 
 ## Features
 This is an app to play a word game for a single player. Player has possibility to select the level for the game and repeat the game as many numbers of times.
 
 # Flowchart
 The flowchart for this project is created with the help from <app/web name>:
-![hangmancodeflowchart]()
+![hangmancodeflowchart](/images/)
 
 ## Welcome Screen
 At the start of game, welcome screen appears for xxx seconds and
 after that directly jumps to instructions screen
 
-![welcomescreen]()
+![welcomescreen](/images/welcomescreen.png)
 
 # Game Instructions
 On this screen step by step instructions are mentioned for the player to understand every detail could be required to understand during the game
 
-![Howtoplayimage]()
+![Howtoplayimage](/images/howtoplay.png)
 
 # Start Screen
 Here player will be asked to enter the name and to select the level of the game, player wants to play with
 
-![startscreenimage]()
+![startscreenimage](/images/choosegamelevel.png)
 
 ## In the Game
 As soon player choose to start (or restart the game), this screen will show up which is having a hidden word for player to guess. Only known here is the length of word
 
-![Gamescreenimage]()
+![Gamescreenimage](/images/gamescreen.png)
 
 ## End of Game
 The game will end when player wins or loses. At the end of game, player will be asked if he/she wants to play again. If player chooses to restart the game, start game screen will pop up else app will close with thanks message
 
-![playerwinimage]()
+![playerwinimage](/images/wingame.png)
 
-![Playerlooseimage]()
-
-![whenplayerchoosesnottocontinue]()
+![Playerlooseimage](/images/lossgame.png)
 
 # Future Roadmap
 Though the app is complete and functioning smoothly, there are still few improvement/enhancements can be added later. Few of them are:
