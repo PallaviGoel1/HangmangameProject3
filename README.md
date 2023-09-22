@@ -53,11 +53,11 @@ Though the app is complete and functioning smoothly, there are still few improve
  
 
 # Technologies Used
-Following tools and technologies are used for this project:\    
+Following tools and technologies are used for this project:    
     Language: Python\
     Version Control: GitHub\
     Coding/Debugging: Codeanywhere\
-    Deployment: Heroku\
+    Deployment: Heroku
 
 ## Deployment
 Deployment of this project is done via Heroku. Steps followed are as follows:\
