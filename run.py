@@ -11,8 +11,8 @@ colorama.init(autoreset=True)
 
 # Ask if user want to play again
 def restart_game():
-    str = " Would you like to play again? "
-    ans = input(Fore.CYAN + str, " If Yes, Press 'y' else 'n': ")
+    print(Fore.CYAN + " Would you like to play again?\n")
+    ans = input(Fore.CYAN + " If Yes, Press 'y' else 'n: ")
     if ans == "y":
         hangman()
     elif ans == "n":
@@ -43,7 +43,7 @@ def hangman():
         if main_word == word:
             print(Fore.GREEN + "******************************************\n")
             print(" Hurray, YOU WON !!\n")
-            print("--------------'", word, "'-------------- was the answer\n")
+            print("--------------", word, "-------------- was the answer\n")
             print(Fore.GREEN + "******************************************\n")
             time.sleep(1)
             restart_game()
@@ -142,7 +142,7 @@ def hangman():
                 print("***************************************************\n")
                 str = "------------------"
                 str1 = str + " was the answer"
-                print(Fore.BLUE + str, "'", word, "'", Fore.BLUE + str1)
+                print(Fore.BLUE + str, word, Fore.BLUE + str1)
                 print("\n")
                 restart_game()
 
@@ -151,7 +151,7 @@ def hangman():
 def main():
     show_message()
     name = input("\n Please enter your name: ")
-    print("\n Hello my friend " + name, " Let's start the game!\n")
+    print("\n Hello my friend " + name, ", Let's start the game!\n")
     print(Fore.CYAN + "\n************************************************\n")
     time.sleep(1)
     hangman()
@@ -212,7 +212,7 @@ def show_message():
     print("|                   ")
     print("|                  ")
     print("-------------------")
-    time.sleep(5)
+    time.sleep(2)
     # imitialalize colorama
     cl.init()
     # clear the terminal screen
