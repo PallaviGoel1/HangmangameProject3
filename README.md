@@ -49,7 +49,7 @@ Though the app is complete and functioning smoothly, there are still few improve
 2- Words list can be linked to a dictionary so that wider range of words could be available for user to guess from\
 3- Number of wins and looses can be counted and added to screen every time game ends\
 4- Historical records can be displayed\
-5- User registration process can be included\
+5- User registration process can be included
  
 
 # Technologies Used
